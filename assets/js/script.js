@@ -7,3 +7,17 @@ const tooltipList = tooltipTriggerList.map((tooltipTriggerEl) => new bootstrap.T
 $('.card').on('click', (e) => {
   $('.card-body').toggle();
 });
+
+
+/*
+  Componentes sin JS:
+  - Navbar
+  - Cards (implementación corriente)
+  - Buttons
+  - Carousel (en esta versión se puede implementar sin añadir JS propio)
+
+  Componentes con JS:
+  - Tooltips
+  - Cards (toggle)
+  - Typeform
+*/

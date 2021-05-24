@@ -1,6 +1,4 @@
-:root {
-}
-
+/* ---- Global Styles ---- */
 html {
   margin: 0;
   height: 100%;
@@ -21,6 +19,18 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+section {
+  margin-bottom: 80px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 24px 0px;
+  border-bottom: 1px solid var(--bs-info);
+}
+
+/* ---- Navbar ---- */
 nav img {
   height: 24px;
 }
@@ -33,17 +43,7 @@ nav h1 {
   padding: 8px;
 }
 
-section {
-  margin-bottom: 80px;
-}
-
-section h2 {
-  text-align: center;
-  margin-bottom: 24px;
-  padding: 24px 0px;
-  border-bottom: 1px solid var(--bs-info);
-}
-
+/* ---- About us section ---- */
 #about-us-section .icon-container {
   background: var(--bs-info);
   padding: 8px;
@@ -61,6 +61,7 @@ section h2 {
   margin-top: 8px;
 }
 
+/* ---- Highlights section ---- */
 #highlights-section h4 {
   margin-bottom: 12px;
 }
@@ -79,6 +80,7 @@ section h2 {
   background: var(--bs-info);
 }
 
+/* ---- Footer ---- */
 footer {
   background: var(--bs-info);
   padding: 8px 0px;
@@ -97,6 +99,7 @@ footer i:not(:last-child) {
   margin-right: 12px;
 }
 
+/* ---- Bootstrap Tooltips ---- */
 .tooltip-inner {
   background: white;
   color: black;

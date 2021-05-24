@@ -70,6 +70,10 @@ section h2 {
   height: 100%;
 }
 
+#highlights-section img {
+  min-height: 240px;
+}
+
 #highlights-section .card-body {
   padding: 24px;
   background: var(--bs-info);

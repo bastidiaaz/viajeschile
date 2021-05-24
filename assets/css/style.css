@@ -1,0 +1,20 @@
+:root {
+}
+
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  margin: 0;
+}

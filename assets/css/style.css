@@ -10,11 +10,23 @@ html {
 body {
   min-height: 100%;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
+}
+
+nav img {
+  height: 24px;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+.navbar {
+  padding: 8px;
 }

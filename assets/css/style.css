@@ -34,10 +34,11 @@ nav h1 {
 }
 
 section {
-  margin-bottom: 32px;
+  margin-bottom: 80px;
 }
 
-#about-us-section h2 {
+section h2 {
+  text-align: center;
   margin-bottom: 24px;
   padding: 24px 0px;
   border-bottom: 1px solid var(--bs-info);
@@ -58,4 +59,16 @@ section {
 
 #about-us-section .row > .col-12:nth-child(even) .icon-container {
   margin-top: 8px;
+}
+
+#highlights-section h4 {
+  margin-bottom: 12px;
+}
+
+#highlights-section img {
+  height: 200px;
+}
+
+#highlights-section .card-body {
+  background: var(--bs-info);
 }

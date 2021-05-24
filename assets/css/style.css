@@ -66,6 +66,7 @@ section h2 {
 }
 
 #highlights-section .card {
+  cursor: pointer;
   height: 100%;
 }
 
@@ -90,4 +91,13 @@ footer i {
 
 footer i:not(:last-child) {
   margin-right: 12px;
+}
+
+.tooltip-inner {
+  background: white;
+  color: black;
+}
+
+.tooltip-arrow:before {
+  border-top-color: white !important;
 }

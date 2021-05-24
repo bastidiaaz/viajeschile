@@ -65,11 +65,12 @@ section h2 {
   margin-bottom: 12px;
 }
 
-#highlights-section img {
-  height: 200px;
+#highlights-section .card {
+  height: 100%;
 }
 
 #highlights-section .card-body {
+  padding: 24px;
   background: var(--bs-info);
 }
 

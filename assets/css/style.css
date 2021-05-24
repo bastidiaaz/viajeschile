@@ -72,3 +72,16 @@ section h2 {
 #highlights-section .card-body {
   background: var(--bs-info);
 }
+
+footer {
+  background: var(--bs-info);
+  padding: 8px 0px;
+}
+
+footer i {
+  font-size: 32px;
+}
+
+footer i:not(:last-child) {
+  margin-right: 12px;
+}

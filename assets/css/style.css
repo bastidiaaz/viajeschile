@@ -1,6 +1,10 @@
 /* ---- Global Styles ---- */
 :root {
-  --primary: #0aa2c0;
+  --primary-dark: #DB4457;
+  --primary: #f99072;
+  --primary-light: #FED7B9;
+  --gray: #06070B;
+  --gray-light: #344852;
 }
 
 html {
@@ -11,7 +15,7 @@ html {
 
 body {
   min-height: 100%;
-  background: black;
+  background: #1D2026;
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -19,7 +23,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -31,7 +35,7 @@ section h2 {
   text-align: center;
   margin-bottom: 24px;
   padding: 24px 0px;
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary-dark);
 }
 
 /* ---- Navbar ---- */
@@ -50,12 +54,19 @@ nav h1 {
 
 /* ---- About us section ---- */
 #about-us-section .icon-container {
-  background: var(--primary);
+  background: var(--gray-light);
+  border-radius: 36px;
   padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 28px;
+}
+
+#about-us-section .icon-container i {
+  background: -webkit-linear-gradient(left, var(--primary), var(--primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #about-us-section .row > .col-12:nth-child(odd) .icon-container {
@@ -82,12 +93,26 @@ nav h1 {
 
 #highlights-section .card-body {
   padding: 24px;
-  background: var(--primary);
+  background: var(--gray-light);
+}
+
+#contact-section h2 {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding: 0;
+  margin-right: 8px;
+}
+
+#contact-section > .d-flex {
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 24px 0px;
+  border-bottom: 1px solid var(--primary-dark);
 }
 
 /* ---- Footer ---- */
 footer {
-  background: var(--primary);
+  background: linear-gradient(to right, var(--primary-dark) 0%, var(--primary-light) 100%);
   padding: 8px 0px;
 }
 
@@ -104,12 +129,46 @@ footer i:not(:last-child) {
   margin-right: 12px;
 }
 
-/* ---- Bootstrap Tooltips ---- */
+/* ---- Bootstrap ---- */
 .tooltip-inner {
   background: white;
   color: black;
 }
 
-.tooltip-arrow:before {
+.bs-tooltip-top .tooltip-arrow:before {
   border-top-color: white !important;
+}
+
+.bs-tooltip-bottom .tooltip-arrow:before {
+  border-bottom-color: white !important;
+}
+
+.bs-tooltip-start .tooltip-arrow:before {
+  border-left-color: white !important;
+}
+
+.bs-tooltip-end .tooltip-arrow:before {
+  border-right-color: white !important;
+}
+
+.btn-primary {
+  background: var(--primary) !important;
+  border: 1px solid var(--primary-light) !important;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark) !important;
+}
+
+.btn-secondary {
+  background: white !important;
+  color: var(--gray) !important;
+}
+
+.btn-secondary:hover {
+  background: #e6e6e6 !important;
+}
+
+.toast {
+  color: var(--gray) !important;
 }

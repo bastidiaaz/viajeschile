@@ -8,6 +8,15 @@ $('.card').on('click', (e) => {
   $('.card-body').toggle();
 });
 
+// Show / hide toast
+$('#modal-button').on('click', (e) => {
+  $('#liveToast').toggleClass('hide');
+  $('#liveToast').toggleClass('show');
+  setTimeout(() => {
+    $('#liveToast').toggleClass('hide');
+    $('#liveToast').toggleClass('show');
+  }, 5000);
+});
 
 /*
   Componentes sin JS:
@@ -15,9 +24,11 @@ $('.card').on('click', (e) => {
   - Cards (implementación corriente)
   - Buttons
   - Carousel (en esta versión se puede implementar sin añadir JS propio)
+  - Modal
 
   Componentes con JS:
   - Tooltips
   - Cards (toggle)
+  - Toast
   - Typeform
 */

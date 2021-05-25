@@ -16,8 +16,10 @@ Componentes sin JS:
 - Cards (implementación corriente)
 - Buttons
 - Carousel (en esta versión se puede implementar sin añadir JS propio)
+- Modal
 
 Componentes con JS:
 - Tooltips
 - Cards (toggle)
+- Toast
 - Typeform
